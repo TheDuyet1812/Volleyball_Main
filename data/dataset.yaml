@@ -1,0 +1,12 @@
+# Please insure that your custom_dataset are put in same parent dir with YOLOv6_DIR
+train: /content/gdrive/MyDrive/YOLOv6/dataset_volleyball/images/train # train images
+val: /content/gdrive/MyDrive/YOLOv6/dataset_volleyball/images/valid # val images
+test: /content/gdrive/MyDrive/YOLOv6/dataset_volleyball/images/test  # test images (optional)
+
+# whether it is coco dataset, only coco dataset should be set to True.
+is_coco: False
+# Classes
+nc: 6  # number of classes
+names: ['Standing', 'Serving', 'Passing', 'Setting', 'Spiking', 'Blocking']  # class names
+        
+
