@@ -100,7 +100,10 @@ class Inferer:
       for i in range(len(det)):
         if det[i][4] > 0.6:
           self.new_det.append(det[i])
-      return torch.stack(self.new_det)
+      if len(self.new_det) > 0:
+          return torch.stack(self.new_det)
+      else:
+          return torch.tensor(self.new_det)
     
     def Count_volleyball(self,lst, det, count, lis, x):
       if len(lst)!= 0:
@@ -133,8 +136,9 @@ class Inferer:
           x[1]= 0
           count+= 1
        
-      lst= []   
-      lst.append(det[:,5])
+      lst= []
+      if len(det > 0):
+            lst.append(det[:,5])
           
         
 
