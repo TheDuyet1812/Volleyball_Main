@@ -4,7 +4,7 @@ Tải anaconda và làm theo hướng dẫn: https://www.anaconda.com/download.
 # Cài đặt Git LFS 
 sudo apt-get install git-lfs
 
-# git clone Volleyball_Main
+# Git clone Volleyball_Main
 git lfs clone https://github.com/TheDuyet1812/Volleyball_Main.git
 
 # Vào Volleyball_Main
